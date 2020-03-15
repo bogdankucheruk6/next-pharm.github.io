@@ -1,0 +1,22 @@
+doctype html
+html
+    include ../includes/_head.pug
+    title main-page
+    body
+        include  ../includes/warning.pug
+        include  ../includes/nav.pug
+        section.bread_crumbs.block
+            div.container
+                div.bread_crumbs__wrapper
+                    div.bread_crumbs__left
+                        p
+                            a(href="index.html") Главная
+                        span.slash /
+                        p Контакты
+                    div.bread_crumbs__right
+                        h2 КОНТАКТЫ
+        include  ../includes/contacts.pug
+        include  ../includes/form.pug
+        include  ../includes/map.pug
+        include  ../includes/footer.pug
+        include  ../includes/script.pug

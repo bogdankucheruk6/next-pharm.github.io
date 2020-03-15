@@ -1,0 +1,23 @@
+doctype html
+html
+    include ../includes/_head.pug
+    title cataloge
+    body
+        include  ../includes/warning.pug
+        include  ../includes/nav.pug
+        section.bread_crumbs.block
+            div.container
+                div.bread_crumbs__wrapper
+                    div.bread_crumbs__left
+                        p
+                            a(href="index.html") Главная
+                        span.slash /
+                        p Каталог препаратов
+                    div.bread_crumbs__right
+                        h2 КАТАЛОГ ПРЕПАРАТОВ
+        include ../includes/cataloge.pug
+        include  ../includes/main_cataloge.pug
+        div.dangerous
+            span САМОЛЕЧЕНИЕ МОЖЕТ БЫТЬ ВРЕДНЫМ ДЛЯ ВАШЕГО ЗДОРОВЬЯ
+        include  ../includes/footer.pug
+        include ../includes/script.pug

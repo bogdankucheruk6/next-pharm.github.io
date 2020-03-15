@@ -1,0 +1,197 @@
+*, :before, :after
+  box-sizing: border-box
+
+body
+  color: #727272
+  font-size: 16px
+  min-width: 290px
+  font-weight: 300
+  background-color: #ffffff
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+  overflow-y: hidden
+
+.slider
+  display: none
+
+.pop_up
+  display: flex
+  flex-direction: column
+  align-items: center
+  max-width: 770px
+
+.pop_up__wrapper
+  display: none
+  justify-content: center
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: #050d14
+  z-index: 11
+  opacity: 0.85
+  overflow-y: auto
+
+.pop_up h3
+  font-size: 26px
+  max-width: 770px
+  margin-bottom: 30px
+
+.warning_button_1,
+.warning_button_2
+  padding: 15px 0
+  border: 1px solid #ed3b3d
+  background-color: rgba( 0, 0, 0, 0)
+  color: #ffffff
+  width: 230px
+  margin: 5px
+
+.warning_wrapper__button
+  display: flex
+  flex-wrap: wrap
+  width: 630px
+  justify-content: space-around
+
+@media (max-width: 676px)
+  .warning_wrapper__button
+    width: 100%
+
+.warning_button_1:focus,
+.warning_button_2:focus
+  outline: none
+
+.warning_button_1:hover,
+.warning_button_2:hover
+  cursor: pointer
+  background-color: #ed3b3d
+
+.wrapper_warning
+  display: flex
+  align-items: center
+  margin-bottom: 30px
+
+.wrapper_warning h2
+  color: #ffffff
+  font-size: calc(16px + 1.63vw)
+  margin-bottom: 0
+
+.warning_img
+  margin-right: 30px
+  width: calc(30px + 3.59vw)
+
+.block
+  padding: calc(25px + 1.3vw) 15px
+
+.container
+  max-width: 1170px
+  margin: 0 auto
+  padding: 0 15px
+
+.slash
+  color: #ffffff
+  margin: 0 5px
+  font-size: 16px
+
+img
+  max-width: 100%
+  max-height: 100%
+  vertical-align: middle
+  object-fit: cover
+
+p
+  color: #ffffff
+
+a
+  text-decoration: none
+
+hr
+  margin: 0 0 15px 0
+  background-color: #e5e5e5
+  border: none
+  height: 1px
+
+h1
+  color: #ffffff
+  font-size: calc(26px + 0.72vw)
+  text-transform: uppercase
+  margin-bottom: calc(15px + 1.09vw)
+
+h2
+  color: #505050
+  font-size: calc(24px + 0.83vw)
+  text-transform: uppercase
+  margin-bottom: 18px
+
+h3
+  color: #ffffff
+  font-size: calc(22px + .2vw)
+
+h4
+  font-size: calc(20px + 0.1vw)
+  color: #727272
+
+h4 a
+  font-size: calc(20px + 0.1vw)
+  color: #727272
+
+h5 a, i, h5
+  color: #b0b0b0
+
+h5, i
+  font-size: 18px
+
+h6 a
+  font-size: 14px
+  color: #ffffff
+
+.header_item .fab:hover,
+.nav li a:hover,
+.burger_dis,
+.nav_wrapper_mobile_dis,
+.burger_menu,
+.nav_wrapper_mobile,
+.slider__navs_left:hover.slider__navs_left:before,
+.slider__navs_right:hover.slider__navs_right:before,
+.footer__container h6 a:hover,
+.footer_item.item_3 a i:hover,
+.accordion__item:hover,
+.accordion__item:hover.accordion__item a,
+.cataloge__button_category:hover,
+.product__button:hover,
+.pagination:hover.pagination a,
+.pagination:hover .pagination_right_arrow,
+.pagination:hover .pagination_left_arrow,
+.button:hover,
+.button
+  transition: 1s all
+
+@import "_nav.sass"
+
+@import "_slider.sass"
+
+@import "_about_company.sass"
+
+@import "_main_cataloge.sass"
+
+@import "_footer.sass"
+
+@import "bread_crumbs"
+
+@import "_about_company_page.sass"
+
+@import "_cataloge.sass"
+
+@import "_news.sass"
+
+@import "_cataloge_detail.sass"
+
+@import "_news_detail.sass"
+
+@import "_pharm.sass"
+
+@import "_contacts.sass"
+
+@import "_form.sass"
+
+

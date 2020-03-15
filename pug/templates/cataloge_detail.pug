@@ -1,0 +1,24 @@
+doctype html
+html
+    include ../includes/_head.pug
+    title cataloge-detail
+    body
+        include  ../includes/warning.pug
+        include  ../includes/nav.pug
+        section.bread_crumbs.block
+            div.container
+                div.bread_crumbs__wrapper
+                    div.bread_crumbs__left
+                        p
+                            a(href="index.html") Главная
+                        span.slash /
+                        p
+                            a(href="cataloge.html") Каталог препаратов
+                        span.slash /
+                        p Lorem ipsum dolor
+                    div.bread_crumbs__right
+                        h2 LOREM IPSUM DOLOR
+        include  ../includes/cataloge_detail.pug
+        include  ../includes/main_cataloge.pug
+        include  ../includes/footer.pug
+        include  ../includes/script.pug

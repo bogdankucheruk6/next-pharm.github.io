@@ -1,0 +1,39 @@
+.bread_crumbs
+  background-image: url("../img/slider_bg.jpg")
+  background-repeat: no-repeat
+  background-position: center center
+  margin-top: 25px
+  position: relative
+  z-index: 1
+
+.bread_crumbs:before
+  content: ''
+  background-color: rgba(152, 154, 184, 0.6)
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  backdrop-filter: blur(3px)
+
+.bread_crumbs__wrapper
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: center
+  position: relative
+
+.bread_crumbs__left
+  display: flex
+
+.bread_crumbs__right h2
+  color: #ffffff
+  margin-bottom: 0
+
+@media (max-width: 1024px)
+  .bread_crumbs
+    margin-top: 0
+
+.bread_crumbs p a
+  text-decoration: underline
+  color: #ffffff

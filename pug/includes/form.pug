@@ -1,0 +1,26 @@
+section.section_form.block
+    div.container
+        div.form_wrapper__title
+            h2 КАТАЛО ПРЕПАРАТОВ
+            hr.line_title
+        form.form
+            div.form_wrapper
+                div.input_wrapper
+                    h2 Имя
+                        span *
+                    input.input(title="Ян, Богдан, Андрей, Наталья..." type="text" pattern="[А-Яа-яЁё]{2,14}" name="name" class="input" placeholder="Введите Ваше имя" required)
+                div.input_wrapper
+                    h2 Email
+                        span *
+                    input.input(title="bogdankucheruk7@gmail.com" type="email" name="email" class="input" placeholder="Введите Ваш email" required)
+                div.input_wrapper
+                    h2 Телефон
+                        span *
+                    input.input(title="0970298273, 0965459525" type="text" pattern="0[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" name="phone" class="input" placeholder="Введите Ваш телефон" required)
+            div.input_wrapper
+                h2 Сообщение
+                    span *
+                textarea.textarea(type="text" name="message" class="textarea" placeholder="Введите Ваше сообщение")
+            div.button_wrapper
+                input.button(type="submit" name="submit" value="ОТПРАВИТЬ")
+

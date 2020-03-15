@@ -1,0 +1,118 @@
+.large_accordion
+  width: 570px
+  padding: 10px
+  border-radius: 1px
+  border: 1px solid #d4d4d4
+  position: relative
+  margin: 15px 0 35px 0
+
+@media (max-width: 768px)
+  .large_accordion
+    width: 270px
+
+.large_accordion:after
+  content: ""
+  position: absolute
+  width: 20px
+  height: 20px
+  transform: rotate(45deg)
+  right: 15px
+  top: calc(50% - 14px)
+
+.large_accordion:hover
+  box-shadow: 3px 3px 6px 0
+
+.large_accordion:hover.large_accordion:after
+  border-right: 2px solid #d4d4d4
+  border-bottom: 2px solid #d4d4d4
+
+.large_accordion__item_wrapper
+  position: absolute
+  top: -9999em
+  left: -1px
+  right: -1px
+  border: 1px solid #d4d4d4
+
+.large_accordion:hover .large_accordion__item_wrapper
+  top: 100%
+
+.large_accordion__item
+  width: 569px
+  height: 50px
+  padding: 15px
+  background-color: #ffffff
+  border-bottom: 1px solid #d4d4d4
+  border-right: 1px solid #d4d4d4
+
+.large_accordion__item a
+  color: #d4d4d4
+  font-size: 17px
+
+.large_accordion__item:hover
+  background-color: #2bb673
+
+.large_accordion__item:hover.large_accordion__item a
+  color: #ffffff
+
+@media (max-width: 768px)
+  .large_accordion__item
+    width: 269px
+
+.wrapper_category_detail
+  display: flex
+  justify-content: space-between
+
+.wrapper_category_detail__text h3
+  color: #505250
+  text-transform: uppercase
+  margin-bottom: calc(25px + .78vw)
+
+.wrapper_category_detail__text h5
+  color: #000000
+  margin-bottom: calc(15px + .52vw)
+
+.wrapper_category_detail__text p
+  color: #505250
+  margin-bottom: calc(15px + .52vw)
+  font-size: 16px
+
+.wrapper_category_detail__img
+  width: 40.1709402%
+  height: 520px
+
+.wrapper_category_detail__text
+  width: 55.5555556%
+
+.category_detail__img
+  height: 100%
+  width: 100%
+
+@media (max-width: 1024px)
+  .cataloge_detail__line
+    display: block
+  .wrapper_category_detail
+    flex-direction: column
+    align-items: center
+  .wrapper_category_detail__img,
+  .wrapper_category_detail__text
+    width: 100%
+    height: auto
+
+.category_detail_button
+  padding: 22px 70px
+  border: 1px solid #ea6b48
+  color: #ea6b48
+  position: relative
+
+.pdf_file
+  width: 32px
+  height: 38px
+  position: absolute
+  right: 15px
+  top: calc(50% - 19px)
+
+.wrapper_category_detail_button
+  display: flex
+  justify-content: flex-end
+  margin: calc(15px + 2.34vw) 0 calc(25px + 2.34vw)
+

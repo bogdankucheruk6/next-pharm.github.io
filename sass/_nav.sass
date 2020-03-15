@@ -1,0 +1,171 @@
+.sec_nav
+  display: flex
+  padding: 15px 0
+  justify-content: space-around
+  flex-wrap: wrap
+
+.header_item
+  display: flex
+
+@media (max-width: 673px)
+  .header_item
+    margin-top: 5px
+
+.header_item.item_4 h5:not(:last-child)
+  margin-right: 15px
+
+.header_item .fab:hover,
+.nav li a:hover
+  color: #2bb673
+
+.fa-linkedin-in
+  font-size: 21px
+
+.header_item.item_1
+  letter-spacing: calc(15px + 0.52vw)
+
+.header_item.item_2 i,
+.header_item.item_3 i
+  margin-right: 15px
+
+.header_item.item_2 i,
+.header_item.item_3 i
+  color: #2bb673
+
+@media (max-width: 1024px)
+  .header_item .fab
+    color: red
+
+
+.header_wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.nav
+  display: flex
+
+.nav a
+  font-size: 18px
+  color: #505050
+
+.nav li:not(:last-child)
+  margin-right: calc(15px + 1.82vw)
+
+@media (max-width: 1024px)
+  .nav_wrapper
+    display: none
+  .logo
+    display: none
+  .sec_nav
+    display: none
+  hr
+    display: none
+
+
+.nav_wrapper_mobile
+  display: flex
+  flex-direction: column
+  position: fixed
+  right: 0
+  bottom: 0
+  background-color: #748fb4
+  opacity: .9
+  border-radius: 5px
+  top: 0
+  padding: 15px
+  width: 230px
+  text-align: center
+  align-items: center
+  overflow-x: auto
+  z-index: 10
+
+.nav_mobile li
+  margin-bottom: 25px
+
+.burger_menu
+  width: 50px
+  height: 50px
+  background-color: red
+  border-radius: 50%
+  position: fixed
+  top: 20px
+  right: 245px
+  transform: rotate(90deg)
+  z-index: 10
+
+.burger_line
+  width: 30px
+  height: 5px
+  border-radius: 1px
+  background-color: #ffffff
+  position: absolute
+  top: calc(50% - 5px/2)
+  left: calc(50% - 15px)
+
+.burger_line:before
+  content: ''
+  width: 30px
+  height: 5px
+  border-radius: 1px
+  background-color: #ffffff
+  position: absolute
+  bottom: 10px
+  left: calc(50% - 15px)
+
+.burger_line:after
+  content: ''
+  width: 30px
+  height: 5px
+  border-radius: 1px
+  background-color: #ffffff
+  position: absolute
+  top: 10px
+  left: calc(50% - 15px)
+
+.logo
+  max-width: 183px
+  max-height: 79px
+
+.logo_mobile
+  max-width: 183px
+  max-height: 79px
+
+.nav_wrapper_mobile .logo_mobile
+  margin-bottom: 15px
+
+.nav_wrapper_mobile hr
+  width: 100%
+
+.burger_dis
+  right: 15px
+  transform: rotate(0deg)
+
+.nav_wrapper_mobile_dis
+  right: -230px
+
+@media (min-width: 1025px)
+  .burger_menu,
+  .nav_wrapper_mobile
+    display: none
+
+.nav_mobile__item a,
+.item_4__mobile h5
+  color: #ffffff
+
+.nav_mobile,
+.item_1__mobile,
+.item_2__mobile,
+.item_3__mobile,
+.header_item.item_4__mobile
+  margin-bottom: 15px
+
+.item_1__mobile a:not(:last-child),
+.item_4__mobile h5:not(:last-child)
+  margin-right: 15px
+
+.item_2__mobile h5 a
+  color: red
+
+.item_3__mobile h5
+  color: red
